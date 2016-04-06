@@ -15,6 +15,13 @@
 		91395B541CB4EA710080E051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91395B521CB4EA710080E051 /* LaunchScreen.storyboard */; };
 		91395B5F1CB4EA710080E051 /* TestOCRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91395B5E1CB4EA710080E051 /* TestOCRTests.m */; };
 		91395B6A1CB4EA710080E051 /* TestOCRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91395B691CB4EA710080E051 /* TestOCRUITests.m */; };
+		91395B781CB4EB4A0080E051 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91395B771CB4EB4A0080E051 /* TesseractOCR.framework */; };
+		91395B7A1CB4EBA00080E051 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 91395B791CB4EBA00080E051 /* tessdata */; };
+		91395B7C1CB4EC5F0080E051 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91395B7B1CB4EC5F0080E051 /* libstdc++.tbd */; };
+		91395B7E1CB4EC880080E051 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91395B7D1CB4EC880080E051 /* CoreImage.framework */; };
+		91395B811CB4EE750080E051 /* CZSPhotoPickerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91395B801CB4EE750080E051 /* CZSPhotoPickerManager.m */; };
+		91395B861CB4EF7F0080E051 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 91395B831CB4EF7F0080E051 /* MBProgressHUD.m */; };
+		91395B871CB4EF7F0080E051 /* UIImage+ScaleSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 91395B851CB4EF7F0080E051 /* UIImage+ScaleSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,16 @@
 		91395B651CB4EA710080E051 /* TestOCRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOCRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91395B691CB4EA710080E051 /* TestOCRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCRUITests.m; sourceTree = "<group>"; };
 		91395B6B1CB4EA710080E051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91395B771CB4EB4A0080E051 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = "TestOCR/Tesseract Resources/TesseractOCR.framework"; sourceTree = "<group>"; };
+		91395B791CB4EBA00080E051 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "Tesseract Resources/tessdata"; sourceTree = "<group>"; };
+		91395B7B1CB4EC5F0080E051 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		91395B7D1CB4EC880080E051 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		91395B7F1CB4EE750080E051 /* CZSPhotoPickerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZSPhotoPickerManager.h; sourceTree = "<group>"; };
+		91395B801CB4EE750080E051 /* CZSPhotoPickerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZSPhotoPickerManager.m; sourceTree = "<group>"; };
+		91395B821CB4EF7F0080E051 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		91395B831CB4EF7F0080E051 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		91395B841CB4EF7F0080E051 /* UIImage+ScaleSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleSize.h"; sourceTree = "<group>"; };
+		91395B851CB4EF7F0080E051 /* UIImage+ScaleSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91395B7E1CB4EC880080E051 /* CoreImage.framework in Frameworks */,
+				91395B7C1CB4EC5F0080E051 /* libstdc++.tbd in Frameworks */,
+				91395B781CB4EB4A0080E051 /* TesseractOCR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,9 @@
 		91395B381CB4EA710080E051 = {
 			isa = PBXGroup;
 			children = (
+				91395B7B1CB4EC5F0080E051 /* libstdc++.tbd */,
+				91395B7D1CB4EC880080E051 /* CoreImage.framework */,
+				91395B771CB4EB4A0080E051 /* TesseractOCR.framework */,
 				91395B431CB4EA710080E051 /* TestOCR */,
 				91395B5D1CB4EA710080E051 /* TestOCRTests */,
 				91395B681CB4EA710080E051 /* TestOCRUITests */,
@@ -101,6 +124,12 @@
 		91395B431CB4EA710080E051 /* TestOCR */ = {
 			isa = PBXGroup;
 			children = (
+				91395B821CB4EF7F0080E051 /* MBProgressHUD.h */,
+				91395B831CB4EF7F0080E051 /* MBProgressHUD.m */,
+				91395B841CB4EF7F0080E051 /* UIImage+ScaleSize.h */,
+				91395B851CB4EF7F0080E051 /* UIImage+ScaleSize.m */,
+				91395B7F1CB4EE750080E051 /* CZSPhotoPickerManager.h */,
+				91395B801CB4EE750080E051 /* CZSPhotoPickerManager.m */,
 				91395B471CB4EA710080E051 /* AppDelegate.h */,
 				91395B481CB4EA710080E051 /* AppDelegate.m */,
 				91395B4A1CB4EA710080E051 /* ViewController.h */,
@@ -117,6 +146,7 @@
 		91395B441CB4EA710080E051 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91395B791CB4EBA00080E051 /* tessdata */,
 				91395B451CB4EA710080E051 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,6 +237,7 @@
 				TargetAttributes = {
 					91395B401CB4EA710080E051 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6R68J4M4QY;
 					};
 					91395B591CB4EA710080E051 = {
 						CreatedOnToolsVersion = 7.2;
@@ -244,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91395B541CB4EA710080E051 /* LaunchScreen.storyboard in Resources */,
+				91395B7A1CB4EBA00080E051 /* tessdata in Resources */,
 				91395B511CB4EA710080E051 /* Assets.xcassets in Resources */,
 				91395B4F1CB4EA710080E051 /* Main.storyboard in Resources */,
 			);
@@ -271,8 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91395B4C1CB4EA710080E051 /* ViewController.m in Sources */,
+				91395B811CB4EE750080E051 /* CZSPhotoPickerManager.m in Sources */,
+				91395B861CB4EF7F0080E051 /* MBProgressHUD.m in Sources */,
 				91395B491CB4EA710080E051 /* AppDelegate.m in Sources */,
 				91395B461CB4EA710080E051 /* main.m in Sources */,
+				91395B871CB4EF7F0080E051 /* UIImage+ScaleSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +379,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -388,6 +424,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -413,10 +450,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen jian (F9QGF7AUN7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen jian (F9QGF7AUN7)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestOCR/Tesseract",
+					Resources,
+				);
 				INFOPLIST_FILE = TestOCR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.TestOCR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c523a3b-17a0-4a56-a1f1-be7a9afbeb3a";
 			};
 			name = Debug;
 		};
@@ -424,10 +472,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen jian (F9QGF7AUN7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen jian (F9QGF7AUN7)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestOCR/Tesseract",
+					Resources,
+				);
 				INFOPLIST_FILE = TestOCR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.TestOCR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9c523a3b-17a0-4a56-a1f1-be7a9afbeb3a";
 			};
 			name = Release;
 		};

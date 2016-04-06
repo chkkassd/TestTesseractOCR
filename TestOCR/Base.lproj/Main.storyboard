@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6Y-5F-onL">
+                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="CrT-9d-PK0"/>
+                                    <constraint firstAttribute="height" constant="30" id="VTr-pI-rfe"/>
+                                </constraints>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="photoButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaE-TU-d91"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QXC-nH-KtS">
+                                <rect key="frame" x="0.0" y="28" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QXC-nH-KtS" secondAttribute="height" multiplier="1:1" id="LGV-wG-lXp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="图片上的文字是这个：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvl-rq-Hen">
+                                <rect key="frame" x="75" y="356" width="170" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="bdt-FG-ukq"/>
+                                    <constraint firstAttribute="height" constant="21" id="nxJ-Nc-MOw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="trs-Bc-c46">
+                                <rect key="frame" x="0.0" y="385" width="320" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1Z9-6D-DSN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qvl-rq-Hen" firstAttribute="top" secondItem="QXC-nH-KtS" secondAttribute="bottom" constant="8" id="1e9-GT-1RD"/>
+                            <constraint firstItem="R6Y-5F-onL" firstAttribute="top" secondItem="trs-Bc-c46" secondAttribute="bottom" constant="5" id="4Ep-yu-o9c"/>
+                            <constraint firstItem="qvl-rq-Hen" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AFf-Nv-EoM"/>
+                            <constraint firstAttribute="trailing" secondItem="trs-Bc-c46" secondAttribute="trailing" id="EA8-GY-rlC"/>
+                            <constraint firstItem="QXC-nH-KtS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ScR-op-b7t"/>
+                            <constraint firstItem="R6Y-5F-onL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UAd-3G-eBX"/>
+                            <constraint firstAttribute="trailing" secondItem="QXC-nH-KtS" secondAttribute="trailing" id="cbi-W1-Y6E"/>
+                            <constraint firstItem="trs-Bc-c46" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d82-JU-ATy"/>
+                            <constraint firstItem="QXC-nH-KtS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="id4-lC-zNh"/>
+                            <constraint firstItem="trs-Bc-c46" firstAttribute="top" secondItem="qvl-rq-Hen" secondAttribute="bottom" constant="8" id="xmw-C8-guN"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="QXC-nH-KtS" id="2pL-Te-mC2"/>
+                        <outlet property="textView" destination="trs-Bc-c46" id="GVs-nE-ued"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="399"/>
         </scene>
     </scenes>
 </document>
